@@ -43,8 +43,9 @@ class Color:
 
 
 class Valentine:
-    def __init__(self, name):
+    def __init__(self, name, chinese_name):
         self.loved_one = name
+        self.chinese_name = chinese_name
 
     def romanticize(self):
         you_in_my_heart = __HEART__
@@ -60,20 +61,22 @@ class Valentine:
         C = Color()
 
         return '{}{}{}\n'\
-            'I love you very much, {}{}{}. Happy valentine\'s day!'.format(
+            'I love you very much, {}{}{}. Happy Double Seventh Festival;\
+            !'.format(
                 C.RED, self.romanticize(), C.NORMAL,
-                C.BOLD_YELLOW, self.loved_one, C.NORMAL
+                C.BOLD_YELLOW, self.chinese_name, C.NORMAL
             )
 
 
 def main():
     try:
-        name = sys.argv[1]
+        name = 'ZhangTing'
+        chinese_name = '张婷'
 
     except IndexError:
         name = 'Love'
 
-    my_beloved = Valentine(name)
+    my_beloved = Valentine(name, chinese_name)
     print(my_beloved.i_love_you())
 
 

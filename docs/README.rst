@@ -1,4 +1,4 @@
-i-love-you
+i-love-you (I got this from https://github.com/caian-org/i-love-u)
 ==========
 
 ``i-love-u`` is a tiny program that generates a lovely digital valentine's
@@ -22,10 +22,6 @@ Usage
 .. image:: docs/example.png
 
 Simply replace the last bit with the name you want and send the whole thing.
-
-::
-
-    $ curl -fsSL https://raw.githubusercontent.com/caianrais/i-love-u/master/src/i-love-u.py | python - Sabrina
 
 
 Motivation
