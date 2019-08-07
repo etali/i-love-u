@@ -61,8 +61,7 @@ class Valentine:
         C = Color()
 
         return '{}{}{}\n'\
-            'I love you very much, {}{}{}. Happy Double Seventh Festival;\
-            !'.format(
+            'I love you very much, {}{}{}. Happy Double Seventh Festival!'.format(
                 C.RED, self.romanticize(), C.NORMAL,
                 C.BOLD_YELLOW, self.chinese_name, C.NORMAL
             )
