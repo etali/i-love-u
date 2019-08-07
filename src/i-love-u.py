@@ -61,7 +61,7 @@ class Valentine:
         C = Color()
 
         return '{}{}{}\n'\
-            'I love you very much, {}{}{}. Happy Double Seventh Festival!'.format(
+            '大眼怪大眼怪, {}{}{}. 七夕节快乐!'.format(
                 C.RED, self.romanticize(), C.NORMAL,
                 C.BOLD_YELLOW, self.chinese_name, C.NORMAL
             )
@@ -69,7 +69,7 @@ class Valentine:
 
 def main():
     try:
-        name = 'ZhangTing'
+        name = 'ZhangTing LiYitan '
         chinese_name = '张婷'
 
     except IndexError:
